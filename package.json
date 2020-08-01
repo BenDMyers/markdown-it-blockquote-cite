@@ -1,5 +1,5 @@
 {
-  "name": "markdown-it-blockquote-cite",
+  "name": "@bendmyers/markdown-it-blockquote-cite",
   "version": "0.1.3",
   "description": "A markdown-it plugin that handles attributions in blockquotes with <cite> tags.",
   "keywords": [
@@ -8,10 +8,10 @@
     "blockquote",
     "cite"
   ],
-  "homepage": "https://github.com/bitcrowd/markdown-it-blockquote-cite#readme",
+  "homepage": "https://github.com/bendmyers/markdown-it-blockquote-cite#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bitcrowd/markdown-it-blockquote-cite.git"
+    "url": "git+https://github.com/bendmyers/markdown-it-blockquote-cite.git"
   },
   "author": "bitcrowd",
   "license": "MIT",
@@ -21,14 +21,14 @@
   "main": "dist/index.js",
   "scripts": {
     "lint": "eslint .",
-    "build": "babel src --out-dir dist/ --ignore \"**/__test__\",\"**/*.test.js\"",
+    "build": "babel src --out-dir dist/ --ignore \"**/__test__\",\"**/*.test.js\" --presets=@babel/env",
     "test": "jest",
     "prepublishOnly": "yarn build"
   },
   "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.8.4",
-    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-env": "^7.11.0",
     "eslint": "^6.4.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
